@@ -1,0 +1,33 @@
+{
+  "name": "koa_test",
+  "version": "1.0.0",
+  "command": "tsc",
+  "main": "index.js",
+  "author": "FETE",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "watch-server": "nodemon --inspect --watch 'src/**/*' -e ts,tsx --exec 'node -r ts-node/register' ./src/app.ts"
+  },
+  "dependencies": {
+    "@types/koa": "^2.0.46",
+    "@types/koa-router": "^7.0.31",
+    "@types/monk": "^6.0.0",
+    "@types/mysql": "^2.15.5",
+    "@types/node": "^10.7.1",
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-socket": "^4.4.0",
+    "koa2-cors": "^2.0.5",
+    "monk": "^6.0.6",
+    "mysql": "mysqljs/mysql",
+    "nodemon": "^1.18.3",
+    "socket.io": "^2.1.1",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.1"
+  }
+}
